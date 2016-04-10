@@ -1,0 +1,66 @@
+
+<!-- b) 
+Taschenrechner
+Schreiben Sie einen Taschenrechner mit JavaScript. Sie können sich entscheiden,
+ob man die Zahlen per Button oder direkt über die Tastatur in ein Formularfeld 
+eingeben kann. Die eval()-Funktion ist für diese Teilaufgabe tabu.
+Auch diese Dateien (wie alle künftigen Übungen!!) bringen Sie unter
+Versionskontrolle.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Svens Taschenrechner</title>
+
+<script type="text/javascript" >
+function Hinzufuegen(Zeichen) { 
+	
+	window.document.Rechner.Display.value = window.document.Rechner.Display.value + Zeichen; 
+	
+	
+	
+
+</script>
+
+
+</head>
+<body>
+  <h1>Taschenrechner</h1>
+<form name="Rechner" >
+<p>     <output name="Display" id="Display">  </output> </p>
+<p>
+<input type="button" value="9" onclick="Hinzufuegen('9')">
+<input type="button" value="8" onclick="Hinzufuegen('8')">
+<input type="button" value="7" onclick="Hinzufuegen('7')">
+</p>
+<p>
+<input type="button" value="6" onclick="Hinzufuegen('6')">
+<input type="button" value="5" onclick="Hinzufuegen('5')">
+<input type="button" value="4" onclick="Hinzufuegen('4')">
+</p>
+<p>
+<input type="button" value="3" onclick="Hinzufuegen('3')">
+<input type="button" value="2" onclick="Hinzufuegen('2')">
+<input type="button" value="1" onclick="Hinzufuegen('1')"></p>
+<p>
+<input type="button" value="+" onclick="Hinzufuegen('+')">
+<input type="button" value="-" onclick="Hinzufuegen('-')">
+<input type="button" value="*" onclick="Hinzufuegen('*')">
+<input type="button" value="/" onclick="Hinzufuegen('/')">
+</p>
+<p>
+<input type="submit" value="C">
+<input type="submit" value="="></p>
+</form>
+
+
+<form>
+</form>
+
+
+
+
+</body>
+</html>
