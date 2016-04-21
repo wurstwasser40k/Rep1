@@ -6,9 +6,11 @@
 	<script type="text/javascript">
 		var auto = new Auto("BMW", 123);
 		auto.tanken(20);
+		alert("Autotyp:" + auto.typ);
+		
 		
 		function Auto(typ, fahrgestellnummer){
-			this.typ = typ;
+			typ = typ;
 			this.fahrgestellnummer = fahrgestellnummer;
 			this.tankfuellung = 0;
 			
